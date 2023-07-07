@@ -1,0 +1,41 @@
+.footer{
+    background-image: url(../layout/footer_image.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: #EBEBEB;
+    padding-bottom: 30px;
+    .logo{
+        padding: 80px 0;
+    }
+    .socialItem{
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        .icon{
+            margin-right: 8px;
+        }
+    }
+    .title{
+        
+        color:#005A9B;
+        font-size:17px;
+        
+    }
+    .value{
+        margin: 8px 0;
+        font-size:14px;
+        color:#5F5F5F;
+ 
+    }
+    .cookies{
+        font-size:14px;
+        text-align: center;
+        border-top:1px solid #5F5F5F;
+        padding:40px;
+        margin-top: 40px;
+        a{
+            font-size:14px;
+            color:#005A9B;
+        }
+    }
+}

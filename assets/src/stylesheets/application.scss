@@ -1,0 +1,27 @@
+//Libraries
+    @import "lib/swiper"; // Bootstrap 4.3.0
+    //@import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.css";
+//Projeto 
+    // Settings
+    @import "./project/settings/all";
+    @import "./project/settings/a";
+    @import "./project/settings/body";
+    @import "./project/settings/colors";
+    @import "./project/settings/display";
+    @import "./project/settings/effects";
+    @import "./project/settings/fonts";
+    @import "./project/settings/mixins";
+    @import "./project/settings/relative";
+    @import "./project/settings/spaces";
+    @import "./project/settings/styles";
+    @import "./project/settings/swiper";
+
+
+    // Pages
+    @import "./project/pages/home";
+
+    //Components
+    @import "./project/components/header"; 
+    @import "./project/components/footer"; 
+    @import "./project/components/menu"; 
+    

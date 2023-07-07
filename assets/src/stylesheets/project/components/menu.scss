@@ -1,0 +1,129 @@
+.menuBox{
+    height: 100%;
+}
+.menuDesktop{
+    height: 100%;
+    ul{
+        height: var(--header-height);
+        align-items: center;
+        display: flex;
+        list-style: none;
+        margin:0;
+        padding:0;
+        
+    }
+    .menu-item{
+        margin-right: 15px;
+        &.btn{
+            background-color: var(--color-white);
+            &:hover{
+                background-color:#ffab00;
+                a{
+                    color:var(--color-white);
+                }
+            }
+            a{
+                color:var(--color-gray);
+                
+                
+
+            }
+            
+        }
+        &:last-child,.sub-menu .menu-item{
+            margin-right: 0;
+        }
+        a{
+           color:var(--color-white);
+           display: block;
+           position: relative;
+           text-transform: uppercase;
+        }
+        &:hover{
+            .sub-menu{
+                display: flex;
+            }            
+        }
+        &.menu-item-has-children{
+            a{
+                padding-right: 21px;
+                &::after{
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    background-image: url(../layout/seta.png);
+                    width:11px;
+                    height: 16px;
+                    position: absolute;
+                    right: 0;
+                    top:50%;
+                    margin-top: -6px;
+                    background-repeat: no-repeat;
+                    background-position:center center;
+                    transition: ease all 0.4s;
+                }
+                &:hover{
+                    color:#ffab00;
+                }
+            }
+            &:hover{
+                a::after{
+                    transform: rotate(-180deg);
+                }
+
+            }
+        }
+   }
+
+    .sub-menu{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--color-navy);
+        .menu-item a{
+            padding: 5px;
+            &::after{
+                display: none;
+            }
+        }
+    }   
+}
+#menu-footer-menu,ul,li{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+#menu-footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+    > li{
+        width:50%;
+        
+        > a{
+            color:#005A9B;
+            font-size:17px;
+        }
+        .sub-menu{
+            margin-top: 8px;
+            li{
+                margin-bottom: 8px;
+                a{
+                    font-size:14px;
+                    color:#5F5F5F;
+                    
+                }
+
+            }
+            
+
+        }
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    .menuDesktop{
+        #menu-menu-principal{
+            display: none;
+        }
+    }    
+}

@@ -1,0 +1,17 @@
+.flex{display: flex;}
+.wrap{flex-wrap: wrap;}
+.column{flex-direction: column;}
+/*justify-content*/
+.jStart{justify-content: flex-start;}
+.jEnd{justify-content: flex-end;}
+.jCenter{justify-content: center;}
+.jBetween{justify-content: space-between;}
+/*align-items*/
+.iCenter{align-items: center;}
+
+.absoltute{position: absolute;}
+.relative{position: relative;}
+
+.toRight{
+    margin-left: auto;
+}

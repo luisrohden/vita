@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <label> 
+                <span>Nome: *</span>
+                [text* your-name placeholder "Insira seu Nome..."] 
+            </label>
+        </div>
+        <div class="col-12">
+            <label> 
+                <span>E-mail: *</span>
+                [email* email placeholder "Insira seu email..."] 
+            </label>
+        </div>
+        <div class="col-12">
+            <label> 
+                <span>Telefone: *</span>
+                [text* phone placeholder "Insira seu email..."] 
+            </label>
+        </div>
+        <div class="col-12 col-md-6">
+            <label> 
+                <span>Estado: *</span>
+                [select* state class:local_state include_blank "São Paulo"]
+            </label>
+        </div>
+        <div class="col-12 col-md-6">
+            <label> 
+                <span>Cidade: *</span>
+                [select* city class:local_city include_blank "São Paulo"]
+            </label>
+        </div>
+        <div class="col-12">
+            [submit "Enviar"]
+        </div>
+    </div>
+</div>
+
+
+
+
+

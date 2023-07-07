@@ -1,0 +1,8 @@
+a{
+    color:red;
+    font-size: 15px;
+    transition: ease all 0.5s;
+    &:hover{
+        color:blue;
+    }
+}
