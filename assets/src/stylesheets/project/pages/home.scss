@@ -111,7 +111,7 @@ section{
 }
 #diff{
     .content{
-        font-size: 300;
+        font-weight: 300;
     }
     
 }
@@ -233,7 +233,7 @@ section{
             h3{
                 font-size: 25px;
                 color:#041B3A;
-                font-size:400;
+                font-weight:400;
                 line-height: 1.1;
             }
             p{
@@ -244,5 +244,11 @@ section{
                 margin-top: auto;
             }
         }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    
+    #franchise .blockFranchise .content h3{
+        font-size:22px;
     }
 }
